@@ -39,7 +39,7 @@ public class JmsPoolTest {
 
     @BeforeEach
     protected void setUp() throws Exception {
-        TransactionManagerServices.getConfiguration().setJournal("null").setGracefulShutdownInterval(Duration.ofSeconds(2L));
+        TransactionManagerServices.getConfiguration().setJournal("null").setGracefulShutdownInterval(2);
         TransactionManagerServices.getTransactionManager();
 
         MockXAConnectionFactory.setStaticCloseXAConnectionException(null);

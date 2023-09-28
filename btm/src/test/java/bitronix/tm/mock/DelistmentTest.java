@@ -83,7 +83,7 @@ public class DelistmentTest {
         poolingDataSource2.setAutomaticEnlistingEnabled(true);
         poolingDataSource2.init();
 
-        TransactionManagerServices.getConfiguration().setGracefulShutdownInterval(Duration.ofSeconds(3L));
+        TransactionManagerServices.getConfiguration().setGracefulShutdownInterval(3);
 
         btm = TransactionManagerServices.getTransactionManager();
     }

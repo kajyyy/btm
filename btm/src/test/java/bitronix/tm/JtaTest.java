@@ -47,7 +47,7 @@ public class JtaTest {
 
     @BeforeEach
     protected void setUp() throws Exception {
-        TransactionManagerServices.getConfiguration().setGracefulShutdownInterval(Duration.ofSeconds(1));
+        TransactionManagerServices.getConfiguration().setGracefulShutdownInterval(1);
         TransactionManagerServices.getConfiguration().setExceptionAnalyzer(DefaultExceptionAnalyzer.class.getName());
         btm = TransactionManagerServices.getTransactionManager();
     }
