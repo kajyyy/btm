@@ -427,11 +427,14 @@ public class Configuration implements Service {
      * @return this.
      * @see #getDefaultTransactionTimeout()
      */
-//    public Configuration setDefaultTransactionTimeout(Duration defaultTransactionTimeout) {
-//        checkNotStarted();
-//        this.defaultTransactionTimeout = defaultTransactionTimeout;
-//        return this;
-//    }
+	 
+	 /*
+    public Configuration setDefaultTransactionTimeout(Duration defaultTransactionTimeout) {
+        checkNotStarted();
+        this.defaultTransactionTimeout = defaultTransactionTimeout;
+        return this;
+    }
+    */
 
     public Configuration setDefaultTransactionTimeout(Integer defaultTransactionTimeout) {
         checkNotStarted();
@@ -457,11 +460,14 @@ public class Configuration implements Service {
      * @return this.
      * @see #getGracefulShutdownInterval()
      */
-//    public Configuration setGracefulShutdownInterval(Duration gracefulShutdownInterval) {
-//        checkNotStarted();
-//        this.gracefulShutdownInterval = gracefulShutdownInterval;
-//        return this;
-//    }
+	 
+    /*	 
+    public Configuration setGracefulShutdownInterval(Duration gracefulShutdownInterval) {
+        checkNotStarted();
+        this.gracefulShutdownInterval = gracefulShutdownInterval;
+        return this;
+    }
+    */
 
     public Configuration setGracefulShutdownInterval(Integer gracefulShutdownInterval) {
         checkNotStarted();

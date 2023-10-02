@@ -110,11 +110,13 @@
 
     <modules>
         <module>btm</module>
+		<!--
         <module>btm-jetty-lifecycle</module>
         <module>btm-tomcat-lifecycle</module>
         <module>btm-spring</module>
         <module>btm-spring-boot-starter</module>
         <module>btm-docs</module>
+		-->
     </modules>
 
     <dependencyManagement>
